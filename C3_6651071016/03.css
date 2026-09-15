@@ -106,3 +106,223 @@ footer {
   font-size: 9px;
   color: #444;
 }
+
+/* Product page layout */
+body {
+  background-color: #ffffff;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #aae0d8;
+  padding: 10px 40px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  height: auto;
+  text-align: left;
+  border-bottom: 0;
+}
+
+.logo-container {
+  background-color: #ffffff;
+  border: 1px solid #777;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo-icon {
+  font-size: 28px;
+  font-weight: bold;
+  color: #0b5394;
+  position: relative;
+}
+
+.logo-text {
+  font-size: 11px;
+  font-weight: bold;
+  line-height: 1.2;
+  color: #000;
+}
+
+.brand-name {
+  font-size: 26px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.container {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 40px;
+  flex: 1;
+  background: #ffffff;
+  box-shadow: none;
+}
+
+.page-title {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0 0 25px;
+}
+
+.product-detail-section {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 40px;
+  align-items: flex-start;
+}
+
+.product-image-box {
+  border: 1px solid #7f8c8d;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  width: 260px;
+  height: 260px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.product-image-box img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.product-info-center {
+  flex: 1;
+}
+
+.product-name {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0 0 10px;
+}
+
+.product-description {
+  font-size: 13px;
+  line-height: 1.5;
+  color: #444;
+  margin: 0 0 20px;
+  text-align: justify;
+}
+
+.spec-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.table-caption {
+  font-size: 13px;
+  font-weight: normal;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.spec-table th,
+.spec-table td {
+  border: 1px solid #999;
+  padding: 6px 12px;
+}
+
+.spec-table th {
+  background-color: #b4c7e7;
+  font-weight: bold;
+  text-align: center;
+}
+
+.spec-table td:first-child {
+  background-color: #d9e1f2;
+  width: 30%;
+}
+
+.policy-box {
+  border: 1px solid #333;
+  border-radius: 6px;
+  padding: 15px;
+  width: 240px;
+  background-color: #fff;
+  flex-shrink: 0;
+}
+
+.policy-title {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0 0 12px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+}
+
+.policy-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 13px;
+}
+
+.policy-list li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.related-section {
+  margin-top: 30px;
+}
+
+.related-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 0 15px;
+}
+
+.related-grid {
+  display: flex;
+  gap: 20px;
+}
+
+.related-card {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 220px;
+  background-color: #fff;
+}
+
+.related-img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  border: 1px solid #eee;
+  background-color: #fafafa;
+}
+
+.related-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.related-name,
+.related-price {
+  font-size: 13px;
+}
+
+.related-name {
+  font-weight: bold;
+}
