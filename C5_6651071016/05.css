@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin: 0;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  gap: 6px;
+}
+.logo-text-viet {
+  font-size: 28px;
+  font-weight: bold;
+  color: #0284c7;
+}
+.logo-text-air {
+  font-size: 28px;
+  font-weight: bold;
+  color: #f97316;
+}
+.logo-icon {
+  width: 32px;
+  height: 32px;
+}
+.card {
+  background: #fff;
+  width: 100%;
+  max-width: 580px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  padding: 25px 30px;
+}
+h2 {
+  text-align: center;
+  font-size: 18px;
+  margin: 0 0 20px;
+  color: #0f172a;
+}
+.section-title {
+  font-weight: bold;
+  font-size: 14px;
+  color: #0f172a;
+  margin: 15px 0 8px;
+}
+.row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+.col {
+  flex: 1;
+}
+label {
+  display: block;
+  font-size: 13px;
+  color: #334155;
+  margin-bottom: 4px;
+}
+select,
+input[type="date"],
+input[type="number"] {
+  width: 100%;
+  padding: 7px 10px;
+  border: 1px solid #94a3b8;
+  border-radius: 8px;
+  font-size: 13px;
+  outline: none;
+  background: #fff;
+}
+.required {
+  color: red;
+  margin: 0 2px;
+}
+.date-group {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.result-box {
+  font-size: 13px;
+  color: #334155;
+  margin: 8px 0;
+}
+.total-price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+}
+.note-text {
+  font-size: 12px;
+  color: #64748b;
+}
+.security-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  background: #f8fafc;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px dashed #cbd5e1;
+  font-size: 12px;
+  color: #475569;
+  line-height: 1.4;
+}
+.security-icon {
+  font-size: 18px;
+}
+.btn-submit {
+  width: 100%;
+  background: #ea580c;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.btn-submit:hover {
+  background: #c2410c;
+}

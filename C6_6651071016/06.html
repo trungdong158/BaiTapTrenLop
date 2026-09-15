@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đặt vé máy bay VietAir</title>
+    <link rel="stylesheet" href="06.css" />
+  </head>
+  <body>
+    <div class="logo-container">
+      <span class="logo-text-viet">Viet</span>
+      <svg
+        class="logo-icon"
+        viewBox="0 0 24 24"
+        fill="#f97316"
+        aria-hidden="true"
+      >
+        <path
+          d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"
+        />
+      </svg>
+      <span class="logo-text-air">Air</span>
+    </div>
+
+    <div class="card">
+      <h2>Đặt vé máy bay VietAir - Kết quả Bài tập</h2>
+      <form action="#" method="post">
+        <div class="section-title">1. Thông tin chuyến bay</div>
+        <div class="row">
+          <div class="col">
+            <label for="from">Điểm đi:</label>
+            <select id="from">
+              <option selected>Hà Nội – HAN</option>
+              <option>TP. Hồ Chí Minh – SGN</option>
+              <option>Đà Nẵng – DAD</option>
+            </select>
+          </div>
+          <div class="col">
+            <label for="to">Điểm đến:</label>
+            <select id="to">
+              <option selected>Đà Nẵng – DAD</option>
+              <option>Hà Nội – HAN</option>
+              <option>TP. Hồ Chí Minh – SGN</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <label>Ngày đi:</label>
+            <div class="date-group">
+              <input type="date" value="2023-10-15" />
+              <span class="required">*</span>
+              <input type="date" value="2023-10-18" />
+            </div>
+          </div>
+          <div class="col">
+            <label for="seat">Hạng ghế:</label>
+            <select id="seat" size="3">
+              <optgroup label="&lt;optgroup&gt;">
+                <option selected>Phổ thông basic – 1.200.000đ</option>
+                <option>Phổ thông flex – 1.800.000đ</option>
+                <option>Thương gia biz – 4.500.000đ</option>
+              </optgroup>
+            </select>
+          </div>
+        </div>
+
+        <div class="section-title">2. Thông tin hành khách</div>
+        <div class="row">
+          <div class="col">
+            <label for="adults">Số hành khách người lớn:</label>
+            <input type="number" id="adults" value="2" />
+          </div>
+          <div class="col">
+            <label for="children">Số trẻ em:</label>
+            <input type="number" id="children" value="1" />
+          </div>
+          <div class="col">
+            <label for="promo">Mã giảm giá:</label>
+            <select id="promo" size="3">
+              <option selected>SUMMER20</option>
+              <option>NEWMEMBER</option>
+              <option>HOLIDAY50</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="section-title">3. Kết quả ước tính</div>
+        <div class="result-box">
+          Tổng tiền ước tính: <output class="total-price">3.600.000 VNĐ</output>
+          <span class="note-text"
+            >(for illustration only, matching input example).</span
+          >
+        </div>
+
+        <div class="section-title">4. Bảo mật giao dịch</div>
+        <div class="security-box">
+          <span class="security-icon">🔒</span>
+          <div>
+            Hệ thống sẽ tạo một cặp khóa mã hóa để bảo vệ thông tin của bạn.
+            (Keygen has been deprecated and does not display on modern browsers;
+            code only to structure).
+          </div>
+        </div>
+
+        <button type="submit" class="btn-submit">✈ Tìm chuyến bay</button>
+      </form>
+    </div>
+  </body>
+</html>

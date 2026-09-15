@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background-color: #e5e7eb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+}
+.container {
+  background-color: #fff;
+  width: 100%;
+  max-width: 620px;
+  padding: 20px 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+h2 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #111;
+}
+fieldset {
+  border: 1px solid #94a3b8;
+  background-color: #f8fafc;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  padding: 10px 15px 15px;
+}
+legend {
+  font-weight: normal;
+  font-size: 14px;
+  color: #1e293b;
+  padding: 0 5px;
+}
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.form-group label {
+  width: 160px;
+  font-size: 13px;
+  color: #334155;
+}
+.form-group .input-wrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="number"],
+input[type="date"],
+input[type="search"],
+input[type="url"],
+input[type="file"] {
+  width: 100%;
+  padding: 5px 8px;
+  border: 1px solid #94a3b8;
+  border-radius: 4px;
+  font-size: 13px;
+  outline: none;
+  background: #fff;
+}
+input[type="color"] {
+  border: 1px solid #94a3b8;
+  height: 25px;
+  width: 50px;
+  cursor: pointer;
+  padding: 0;
+  background: #ff6b6b;
+}
+.required {
+  color: red;
+  margin-left: 5px;
+  font-size: 12px;
+}
+.radio-group,
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 13px;
+}
+.radio-group label,
+.checkbox-group label {
+  width: auto;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+}
+.range-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+}
+.range-container input[type="text"] {
+  width: 120px;
+}
+.range-container input[type="range"] {
+  flex: 1;
+}
+.btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+.btn-submit,
+.btn-reset {
+  color: white;
+  border: none;
+  padding: 6px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+}
+.btn-submit {
+  background: #0078d4;
+}
+.btn-reset {
+  background: #5c636a;
+}
+.btn-submit:hover {
+  background: #005a9e;
+}
+.btn-reset:hover {
+  background: #464c52;
+}
