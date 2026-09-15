@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Samsung Galaxy S24 Ultra</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        background-color: #ffffff;
+        color: #333;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+
+      /* Header & Logo */
+      header {
+        background-color: #aae0d8;
+        padding: 10px 40px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+      }
+
+      .logo-container {
+        background-color: #ffffff;
+        border: 1px solid #777;
+        padding: 5px 10px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .logo-icon {
+        font-size: 28px;
+        font-weight: bold;
+        color: #0b5394;
+        position: relative;
+      }
+      .logo-icon span {
+        font-size: 14px;
+        position: absolute;
+        top: 0;
+        right: -10px;
+      }
+
+      .logo-text {
+        font-size: 11px;
+        font-weight: bold;
+        line-height: 1.2;
+        color: #000;
+      }
+
+      .brand-name {
+        font-size: 26px;
+        font-weight: bold;
+        color: #000000;
+      }
+
+      /* Main Content */
+      .container {
+        max-width: 1100px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 20px 40px;
+        flex: 1;
+      }
+
+      .page-title {
+        font-size: 22px;
+        font-weight: bold;
+        margin-bottom: 25px;
+      }
+
+      .product-detail-section {
+        display: flex;
+        gap: 30px;
+        margin-bottom: 40px;
+        align-items: flex-start;
+      }
+
+      /* Khung ảnh sản phẩm chính */
+      .product-image-box {
+        border: 1px solid #7f8c8d;
+        border-radius: 10px;
+        padding: 20px;
+        background-color: #f8f9fa;
+        width: 260px;
+        height: 260px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+      }
+
+      .product-image-box img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+      }
+
+      /* Thông tin chi tiết ở giữa */
+      .product-info-center {
+        flex: 1;
+      }
+
+      .product-name {
+        font-size: 22px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      .product-description {
+        font-size: 13px;
+        line-height: 1.5;
+        color: #444;
+        margin-bottom: 20px;
+        text-align: justify;
+      }
+
+      /* Bảng thông số kỹ thuật */
+      .spec-table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 13px;
+        margin-top: 10px;
+      }
+
+      .table-caption {
+        font-size: 13px;
+        font-weight: normal;
+        margin-bottom: 5px;
+        text-align: center;
+      }
+
+      .spec-table th,
+      .spec-table td {
+        border: 1px solid #999;
+        padding: 6px 12px;
+      }
+
+      .spec-table th {
+        background-color: #b4c7e7;
+        font-weight: bold;
+        text-align: center;
+      }
+
+      .spec-table td:first-child {
+        background-color: #d9e1f2;
+        width: 30%;
+      }
+
+      .spec-table td:last-child {
+        background-color: #ffffff;
+      }
+
+      /* Khung chính sách mua hàng bên phải */
+      .policy-box {
+        border: 1px solid #333;
+        border-radius: 6px;
+        padding: 15px;
+        width: 240px;
+        background-color: #fff;
+        flex-shrink: 0;
+      }
+
+      .policy-title {
+        font-size: 14px;
+        font-weight: bold;
+        margin-bottom: 12px;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 5px;
+      }
+
+      .policy-list {
+        list-style: none;
+        font-size: 13px;
+      }
+
+      .policy-list li {
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      /* Sản phẩm tương tự */
+      .related-section {
+        margin-top: 30px;
+      }
+
+      .related-title {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 15px;
+      }
+
+      .related-grid {
+        display: flex;
+        gap: 20px;
+      }
+
+      .related-card {
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        padding: 8px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        width: 220px;
+        background-color: #fff;
+      }
+
+      .related-img {
+        width: 50px;
+        height: 50px;
+        object-fit: contain;
+        border: 1px solid #eee;
+        background-color: #fafafa;
+      }
+
+      .related-info {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+      }
+
+      .related-name {
+        font-size: 13px;
+        font-weight: bold;
+      }
+
+      .related-price {
+        font-size: 13px;
+        color: #000;
+      }
+
+      /* Footer */
+      footer {
+        background-color: #0c344b;
+        color: #ffffff;
+        padding: 15px 40px;
+        font-size: 12px;
+      }
+
+      .footer-top {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-bottom: 10px;
+        border-bottom: 1px solid #1a4d6d;
+        padding-bottom: 10px;
+      }
+
+      .footer-item {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
+
+      .footer-bottom {
+        text-align: center;
+        color: #a0b2c6;
+        font-size: 11px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Khối Header -->
+    <header>
+      <div class="logo-container">
+        <div class="logo-icon">A<sup>B</sup></div>
+        <div class="logo-text">Logo Điện tử<br />ABC</div>
+      </div>
+      <div class="brand-name">Điện tử ABC</div>
+    </header>
+
+    <!-- Khối Nội dung chính -->
+    <div class="container">
+      <h1 class="page-title">Thông tin sản phẩm</h1>
+
+      <div class="product-detail-section">
+        <!-- Cột trái: Ảnh sản phẩm -->
+        <div class="product-image-box">
+          <!-- Thay thế bằng link ảnh thật hoặc ảnh mockup tương tự -->
+          <img src="https://samobile.com" alt="Samsung Galaxy S24 Ultra" />
+        </div>
+
+        <!-- Cột giữa: Tên, mô tả ngắn và bảng thông số -->
+        <div class="product-info-center">
+          <h2 class="product-name">Samsung Galaxy S24 Ultra</h2>
+          <p class="product-description">
+            Samsung Galaxy S24 Ultra là dòng điện thoại thông minh cao cấp nhất,
+            sở hữu thiết kế sang trọng bền bỉ cùng hệ thống camera đỉnh cao, một
+            cấu hình mạnh mẽ, giúp đáp ứng tối đa mọi tác vụ giải trí hay phục
+            vụ công việc học tập tốt nhất.
+          </p>
+
+          <div class="table-caption">&lt;caption&gt; Thông số kỹ thuật</div>
+          <table class="spec-table">
+            <thead>
+              <tr>
+                <th>Thông số</th>
+                <th>Chi tiết</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Màn hình</td>
+                <td>Màn hình 6.8 inch</td>
+              </tr>
+              <tr>
+                <td>Camera</td>
+                <td>200 + 50 + 12 + 10 MP</td>
+              </tr>
+              <tr>
+                <td>Pin</td>
+                <td>5000 mAh</td>
+              </tr>
+              <tr>
+                <td>RAM</td>
+                <td>12GB RAM</td>
+              </tr>
+              <tr>
+                <td>Bộ nhớ</td>
+                <td>256GB, Bộ nhớ</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Cột phải: Chính sách mua hàng -->
+        <div class="policy-box">
+          <h3 class="policy-title">Chính sách mua hàng</h3>
+          <ul class="policy-list">
+            <li>🛡️ Bảo hành 12 tháng</li>
+            <li>🔄 Đổi trả 7 ngày</li>
+            <li>🚚 Miễn phí ship (toàn quốc)</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Khối sản phẩm tương tự -->
+      <div class="related-section">
+        <h3 class="related-title">Sản phẩm tương tự</h3>
+        <div class="related-grid">
+          <!-- Thẻ sản phẩm 1 -->
+          <div class="related-card">
+            <img
+              class="related-img"
+              src="https://vnecdn.net"
+              alt="iPhone 15 Pro"
+            />
+            <div class="related-info">
+              <div class="related-name">iPhone 15 Pro</div>
+              <div class="related-price">28.990.000 VND</div>
+            </div>
+          </div>
+
+          <!-- Thẻ sản phẩm 2 -->
+          <div class="related-card"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

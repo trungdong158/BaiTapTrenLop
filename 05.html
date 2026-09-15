@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShopVN - Đăng ký tài khoản</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      body {
+        background-color: #e5e7eb;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        padding: 20px;
+      }
+
+      .container {
+        background-color: #ffffff;
+        width: 100%;
+        max-width: 620px;
+        padding: 20px 25px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h2 {
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 20px;
+        font-size: 20px;
+        color: #111;
+      }
+
+      fieldset {
+        border: 1px solid #94a3b8;
+        background-color: #f8fafc;
+        border-radius: 6px;
+        margin-bottom: 15px;
+        padding: 10px 15px 15px 15px;
+      }
+
+      legend {
+        font-weight: normal;
+        font-size: 14px;
+        color: #1e293b;
+        padding: 0 5px;
+      }
+
+      .form-group {
+        display: flex;
+        align-items: center;
+        margin-bottom: 8px;
+      }
+
+      .form-group label {
+        width: 160px;
+        font-size: 13px;
+        color: #334155;
+      }
+
+      .form-group .input-wrapper {
+        flex: 1;
+        display: flex;
+        align-items: center;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="password"],
+      input[type="tel"],
+      input[type="number"],
+      input[type="date"],
+      input[type="search"],
+      input[type="url"],
+      input[type="file"] {
+        width: 100%;
+        padding: 5px 8px;
+        border: 1px solid #94a3b8;
+        border-radius: 4px;
+        font-size: 13px;
+        outline: none;
+        background-color: #fff;
+      }
+
+      input[type="color"] {
+        border: 1px solid #94a3b8;
+        height: 25px;
+        width: 50px;
+        cursor: pointer;
+        padding: 0;
+        background: #ff6b6b;
+      }
+
+      .required {
+        color: red;
+        margin-left: 5px;
+        font-size: 12px;
+      }
+
+      .radio-group,
+      .checkbox-group {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-size: 13px;
+      }
+
+      .radio-group label,
+      .checkbox-group label {
+        width: auto;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        cursor: pointer;
+      }
+
+      .range-container {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        flex: 1;
+      }
+
+      .range-container input[type="text"] {
+        width: 120px;
+      }
+
+      .range-container input[type="range"] {
+        flex: 1;
+      }
+
+      .btn-group {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 15px;
+      }
+
+      .btn-submit {
+        background-color: #0078d4;
+        color: white;
+        border: none;
+        padding: 6px 16px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 13px;
+      }
+
+      .btn-reset {
+        background-color: #5c636a;
+        color: white;
+        border: none;
+        padding: 6px 16px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 13px;
+      }
+
+      .btn-submit:hover {
+        background-color: #005a9e;
+      }
+      .btn-reset:hover {
+        background-color: #464c52;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Đăng ký tài khoản mới</h2>
+      <form action="#" method="post">
+        <!-- Thông tin cơ bản -->
+        <fieldset>
+          <legend>Thông tin cơ bản</legend>
+          <div class="form-group">
+            <label for="fullname">Họ và tên:</label>
+            <div class="input-wrapper">
+              <input type="text" id="fullname" value="Nguyễn Văn An" required />
+              <span class="required">*</span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <div class="input-wrapper">
+              <input
+                type="email"
+                id="email"
+                value="example@gmail.com"
+                required
+              />
+              <span class="required">*</span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="password">Mật khẩu:</label>
+            <div class="input-wrapper">
+              <input type="password" id="password" value="12345678" required />
+              <span class="required">*</span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="phone">Số điện thoại:</label>
+            <div class="input-wrapper">
+              <input type="tel" id="phone" value="0901234567" />
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- Thông tin cá nhân -->
+        <fieldset>
+          <legend>Thông tin cá nhân</legend>
+          <div class="form-group">
+            <label for="age">Tuổi:</label>
+            <div class="input-wrapper">
+              <input type="number" id="age" value="18" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="dob">Ngày sinh:</label>
+            <div class="input-wrapper">
+              <input type="date" id="dob" value="2005-01-01" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Giới tính:</label>
+            <div class="radio-group">
+              <label
+                ><input type="radio" name="gender" value="male" /> Nam</label
+              >
+              <label
+                ><input type="radio" name="gender" value="female" checked />
+                Nữ</label
+              >
+              <label
+                ><input type="radio" name="gender" value="other" /> Khác</label
+              >
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="favcolor">Màu yêu thích:</label>
+            <div class="input-wrapper">
+              <input type="color" id="favcolor" value="#ff6b6b" />
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- Sở thích & Cài đặt -->
+        <fieldset>
+          <legend>Sở thích & Cài đặt</legend>
+          <div class="form-group">
+            <label for="search">Tìm kiếm sở thích:</label>
+            <div class="input-wrapper">
+              <input
+                type="search"
+                id="search"
+                placeholder="Ví dụ: đọc sách, chơi game..."
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="expense">Mức chi tiêu/tháng (VNĐ):</label>
+            <div class="range-container">
+              <input type="text" value="5.000.000" readonly />
+              <input
+                type="range"
+                id="expense"
+                min="0"
+                max="20000000"
+                value="5000000"
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Sở thích (chọn nhiều):</label>
+            <div class="checkbox-group">
+              <label><input type="checkbox" checked /> Đọc sách</label>
+              <label><input type="checkbox" /> Chơi game</label>
+              <label><input type="checkbox" checked /> Du lịch</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="website">Website cá nhân:</label>
+            <div class="input-wrapper">
+              <input
+                type="url"
+                id="website"
+                placeholder="https://example.com"
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="avatar">Ảnh đại diện:</label>
+            <div class="input-wrapper">
+              <input type="file" id="avatar" />
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- Buttons -->
+        <div class="btn-group">
+          <button type="submit" class="btn-submit">Đăng ký ngay</button>
+          <button type="reset" class="btn-reset">Nhập lại</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

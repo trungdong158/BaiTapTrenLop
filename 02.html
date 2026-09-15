@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Báo Sinh Viên CNTT</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background: #eef3f8;
+        color: #222;
+      }
+
+      .container {
+        width: 90%;
+        max-width: 1000px;
+        margin: 10px auto;
+        background: white;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+      }
+
+      /* HEADER */
+      header {
+        background: linear-gradient(120deg, #087be5, #08a99b, #11c66b);
+        color: white;
+        text-align: center;
+        padding: 18px 0 12px;
+      }
+
+      header h1 {
+        font-size: 25px;
+        margin-bottom: 5px;
+      }
+
+      header p {
+        font-size: 14px;
+      }
+
+      /* NAVIGATION */
+      nav {
+        background: #f8fafc;
+        border-bottom: 1px solid #ddd;
+        text-align: center;
+        padding: 8px;
+      }
+
+      nav a {
+        display: inline-block;
+        text-decoration: none;
+        color: #333;
+        font-size: 13px;
+        padding: 7px 14px;
+        border-radius: 15px;
+        margin: 0 3px;
+      }
+
+      nav a:hover {
+        background: #0d91c5;
+        color: white;
+      }
+
+      nav a:first-child {
+        background: #238aca;
+        color: white;
+      }
+
+      /* MAIN */
+      main {
+        display: grid;
+        grid-template-columns: 1fr 250px;
+        gap: 18px;
+        padding: 15px;
+        background: #f3f7fb;
+      }
+
+      /* ARTICLE */
+      article {
+        background: linear-gradient(to bottom, #e6f8f4, white);
+        border: 1px solid #c8d8df;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+      }
+
+      .article-header {
+        background: linear-gradient(to right, #d8f0ee, #c4e8d9);
+        padding: 12px;
+        border-bottom: 1px solid #b9d5ce;
+      }
+
+      article h2 {
+        font-size: 18px;
+        margin-bottom: 6px;
+      }
+
+      .author {
+        font-size: 11px;
+        color: #555;
+      }
+
+      .article-content {
+        padding: 12px;
+        font-size: 12px;
+        line-height: 1.65;
+      }
+
+      .article-content p {
+        margin-bottom: 10px;
+      }
+
+      .article-content strong {
+        font-weight: bold;
+      }
+
+      .article-footer {
+        padding: 10px;
+        font-size: 11px;
+        font-style: italic;
+        color: #555;
+        background: #dff3ee;
+        border-top: 1px solid #c8ddd7;
+      }
+
+      /* ASIDE */
+      aside {
+        background: white;
+        border: 1px solid #d3dce1;
+        border-radius: 8px;
+        padding: 12px;
+        height: fit-content;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12);
+      }
+
+      aside h3 {
+        font-size: 15px;
+        margin-bottom: 10px;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 8px;
+      }
+
+      .related-news {
+        list-style: none;
+      }
+
+      .related-news li {
+        font-size: 12px;
+        padding: 9px 0;
+        border-bottom: 1px solid #ddd;
+        line-height: 1.4;
+      }
+
+      .related-news li:last-child {
+        border-bottom: none;
+      }
+
+      .related-news a {
+        text-decoration: none;
+        color: #333;
+      }
+
+      .related-news a:hover {
+        color: #087be5;
+      }
+
+      /* FOOTER */
+      footer {
+        background: #c8e0f7;
+        text-align: center;
+        padding: 12px;
+        font-size: 11px;
+        color: #34495e;
+        border-top: 1px solid #b5cee5;
+      }
+
+      /* RESPONSIVE */
+      @media (max-width: 700px) {
+        .container {
+          width: 95%;
+        }
+
+        main {
+          grid-template-columns: 1fr;
+        }
+
+        aside {
+          width: 100%;
+        }
+
+        header h1 {
+          font-size: 20px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h1>BÁO SINH VIÊN CNTT</h1>
+        <p>Tin tức – Công nghệ – Sáng tạo</p>
+      </header>
+
+      <nav>
+        <a href="#">Trang chủ</a>
+        <a href="#">Tin công nghệ</a>
+        <a href="#">Sự kiện</a>
+        <a href="#">Liên hệ</a>
+      </nav>
+
+      <main>
+        <article>
+          <div class="article-header">
+            <h2>
+              Khám Phá Sức Mạnh AI: Hội Thảo "Tương Lai Đổi Mới" Chấn Động Giới
+              Trẻ
+            </h2>
+            <p class="author">Tác giả: Nguyễn Văn An | Ngày: 15/11/2024</p>
+          </div>
+
+          <div class="article-content">
+            <p>
+              <strong
+                >&lt;strong&gt;AI (Artificial
+                Intelligence),&lt;/strong&gt;</strong
+              >
+              &lt;em&gt;Hội thảo Tương Lai Đổi Mới&lt;/em&gt; chạm Phái AI chấn
+              động giới trẻ. Các nhà khoa học và chuyên gia công nghệ đã chia sẻ
+              những kiến thức mới nhất về trí tuệ nhân tạo.
+            </p>
+
+            <p>
+              <strong>&lt;strong&gt;Học tập công nghệ&lt;/strong&gt;</strong>
+              giúp sinh viên tiếp cận những xu hướng mới, đồng thời phát triển
+              tư duy sáng tạo và kỹ năng giải quyết vấn đề.
+            </p>
+
+            <p>
+              <strong>&lt;strong&gt;Công nghệ số&lt;/strong&gt;</strong>
+              đang ngày càng phát triển mạnh mẽ, tạo ra nhiều cơ hội học tập,
+              nghiên cứu và việc làm cho sinh viên CNTT.
+            </p>
+
+            <p>
+              Hội thảo mang đến những góc nhìn mới mẻ và truyền cảm hứng cho thế
+              hệ trẻ trong thời đại công nghệ số.
+            </p>
+          </div>
+
+          <div class="article-footer">Nguồn: CLB Tin học – ĐH ABC</div>
+        </article>
+
+        <aside>
+          <h3>Tin liên quan</h3>
+
+          <ul class="related-news">
+            <li>
+              <a href="#"> Hackathon Sinh viên 2024 - Tham Gia Ngay! </a>
+            </li>
+
+            <li>
+              <a href="#"> Workshop Web Design cho Người Mới Bắt Đầu </a>
+            </li>
+
+            <li>
+              <a href="#"> Meetup Khởi Nghiệp Công Nghệ Trẻ </a>
+            </li>
+          </ul>
+        </aside>
+      </main>
+
+      <footer>
+        Trường Đại học ABC | Số 123 Đường Sáng Tạo, Phường Kỹ Thuật, Quận Công
+        Nghệ, TP. Hồ Chí Minh | SĐT: 028-9876543 | Email: lienhe@abc.edu.vn |
+        Website: www.abc.edu.vn
+      </footer>
+    </div>
+  </body>
+</html>
